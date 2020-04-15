@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  line-height: 1.2;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  /* Add background video here */
+}
+
+.bgDark {
+  background: #333;
+  color: white;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.text-primary {
+  color: #3693ff;
+}
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #0d2138;
+}
+
+.java {
+  height: 50vh;
+}
+/* NavBar*/
+#navBar {
+  display: flex;
+  justify-content: space-between;
+  background: #222222;
+  color: white;
+  padding: 1.1rem 5rem;
+  position: sticky; /* Ensures it sticks at the top */
+  top: 0;
+  z-index: 1;
+  border-bottom: 0px solid; /*Creates a line through if at 1px*/
+}
+
+#navBar ul {
+  display: flex;
+  align-items: center;
+  list-style: none; /* Removes list dot from site */
+  margin: 10px;
+}
+#navBar h2 a {
+  color: white;
+  text-decoration: none;
+}
+#navBar li a {
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem;
+  font-size: 1.1rem;
+  margin: 0 0.5rem;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+#navBar li a:hover {
+  background-color: #7fbfff;
+}
+/* NavBar End */
+
+/*Showcase area */
+#showing {
+  background: url(musicGirl.jpg) no-repeat center center/cover;
+  height: 91.8vh;
+}
+.showingContent {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.showingContent h1 {
+  color: #5282d4;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem 3rem;
+  border: 1px solid #7fbfff;
+}
+
+.showingContent .btn {
+  font-size: 1.2rem;
+  padding: 1rem 10rem;
+  transition: color 0.2s, background 0.4s;
+}
+
+.showingContent .btn:hover {
+  background: #7fbfff;
+  color: white;
+}
+/* Showcase End */
+
+/* About Section */
+#about {
+  padding: 5rem 0;
+  background: url(scenery.jpg) no-repeat center center/cover;
+  opacity: 95%;
+}
+
+#about h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#about h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+#about .aboutContent {
+  display: flex;
+  color: black;
+  font-size: 25px;
+}
+
+#about .aboutText,
+#about .aboutImage {
+  flex: 1;
+}
+
+#about p .lead {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+#about .aboutText {
+  text-align: center;
+}
+
+#about .aboutImage img {
+  display: block;
+  margin: auto;
+  border-radius: 90%;
+}
+/* Section: About End */
+
+#contact {
+  padding: 4rem;
+  background-image: linear-gradient(120deg, #c45893, #fda885);
+}
+#contact h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 6rem;
+}
+
+#contact h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 2rem 0;
+  margin-top: 4rem;
+}
+
+#contact .formBox {
+  background: #fff;
+  padding: 3rem;
+  box-shadow: 2px 2px 5px gray;
+}
+
+#contact .formGroup {
+  margin-bottom: 2rem;
+}
+
+#contact .formGroup label {
+  display: block;
+  margin-bottom: 0.5rem;
+  width: 70%;
+  margin-left: 10%;
+  font-size: 1rem;
+}
+
+#contact .formGroup input,
+#contact .formGroup textarea {
+  width: 80%;
+  margin-left: 10%;
+  font-size: 1.1rem;
+  border: 0.5px solid #111;
+  border-radius: 5px;
+}
+
+#contact .fromGroup textarea {
+  font-family: Arial, sans-serif;
+}
+
+#contact .contactBtn {
+  width: 80%;
+  margin-left: 10%;
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  background: #3693ff;
+  color: white;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+/*Certificates section*/
+#certificates {
+  padding: 5rem;
+  background: url(snailsHouse.jpg) no-repeat center/cover;
+  opacity: 95%;
+}
+
+footer {
+  padding: 2rem;
+}
+footer p {
+  text-align: center;
+}
